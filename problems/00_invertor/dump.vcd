@@ -1,0 +1,84 @@
+$date
+	Mon Sep 16 20:22:01 2019
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	100ps
+$end
+$scope module testbench $end
+$var wire 1 ! clk3 $end
+$var wire 1 " clk2 $end
+$var wire 1 # clk1 $end
+$var reg 1 $ clk $end
+$scope module pset00_halffreq $end
+$var wire 1 % a $end
+$var wire 1 & b $end
+$var wire 1 $ in $end
+$var wire 1 ! out $end
+$upscope $end
+$scope module pset00_invertor $end
+$var wire 1 $ in $end
+$var wire 1 " out $end
+$upscope $end
+$scope module pset00_test $end
+$var wire 1 $ in $end
+$var wire 1 # out $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+x&
+0%
+0$
+0#
+1"
+x!
+$end
+#10
+0!
+0&
+#20
+1!
+0"
+1%
+1#
+1$
+#30
+0!
+1&
+#40
+1!
+1"
+0%
+0#
+0$
+#50
+0!
+0&
+#60
+1!
+0"
+1%
+1#
+1$
+#70
+0!
+1&
+#80
+1!
+1"
+0%
+0#
+0$
+#90
+0!
+0&
+#100
+1!
+0"
+1%
+1#
+1$
