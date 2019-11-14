@@ -17,7 +17,7 @@ module top(
 );
 
 assign {DS_EN1, DS_EN2, DS_EN3, DS_EN4} = 4'b1111;
-    clk_div #(.x(25)) div(.clk(CLK),.clk_out(DS_C));
+    clk_div #(.x(24)) div(.clk(CLK),.clk_out(DS_C));
 /*
 *   Problem 1/:
 *   Make an instance of the parametrized clock divider module (clk_div)

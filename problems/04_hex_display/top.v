@@ -18,12 +18,14 @@ assign {DS_A, DS_B, DS_C, DS_D, DS_E, DS_F, DS_G} = segments;
 *   Make an instance of clock divider here.
 *   Connect CLK to the input.
 */
-
+//Solve:
+  clk_div #(.x(16)) div(.clk(CLK),.clk_out(clk2));
 /*
 *   Problem 4/7:
 *   Make an instance of hex display driver (hex_display) here.
 *   Connect 'anodes', 'segments', 'data' to corresponding wires in current
 *   module.
 */
-
+//Solve:
+  hex_display display(.clk(clk2),.data(d),.anodes(anodes),.segments(segments));
 endmodule

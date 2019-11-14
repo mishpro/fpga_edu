@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP4CE6E22) Path("/home/mish/dev/drec-fpga-intro-master/problems/03_led_blink/output_files/") File("03_led_blink.sof") MfrSpec(OpMask(1));
+		Device PartName(EP4CE6E22) Path("/home/mish/dev/FPGA/fpga_edu/problems/03_led_blink/output_files/") File("03_led_blink.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

@@ -1,5 +1,5 @@
 Flow report for 03_led_blink
-Sun Oct 27 22:04:07 2019
+Mon Nov 11 16:02:18 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,17 +40,17 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sun Oct 27 22:04:04 2019       ;
+; Flow Status                        ; Successful - Mon Nov 11 16:02:14 2019       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; 03_led_blink                                ;
 ; Top-level Entity Name              ; top                                         ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE6E22C8                                 ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 25 / 6,272 ( < 1 % )                        ;
-;     Total combinational functions  ; 25 / 6,272 ( < 1 % )                        ;
-;     Dedicated logic registers      ; 25 / 6,272 ( < 1 % )                        ;
-; Total registers                    ; 25                                          ;
+; Total logic elements               ; 24 / 6,272 ( < 1 % )                        ;
+;     Total combinational functions  ; 24 / 6,272 ( < 1 % )                        ;
+;     Dedicated logic registers      ; 24 / 6,272 ( < 1 % )                        ;
+; Total registers                    ; 24                                          ;
 ; Total pins                         ; 6 / 92 ( 7 % )                              ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 276,480 ( 0 % )                         ;
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/27/2019 22:03:43 ;
+; Start date & time ; 11/11/2019 16:01:36 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; 03_led_blink        ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 159320639876393.157220302304923        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 128528027279607.157347729605866        ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                   ; --            ; --          ; --         ;
@@ -99,11 +99,11 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:13     ; 1.0                     ; 888 MB              ; 00:00:34                           ;
-; Fitter               ; 00:00:05     ; 1.0                     ; 1130 MB             ; 00:00:05                           ;
-; Assembler            ; 00:00:01     ; 1.0                     ; 812 MB              ; 00:00:01                           ;
-; Timing Analyzer      ; 00:00:02     ; 1.0                     ; 777 MB              ; 00:00:02                           ;
-; Total                ; 00:00:21     ; --                      ; --                  ; 00:00:42                           ;
+; Analysis & Synthesis ; 00:00:27     ; 1.0                     ; 890 MB              ; 00:01:08                           ;
+; Fitter               ; 00:00:07     ; 1.0                     ; 1132 MB             ; 00:00:07                           ;
+; Assembler            ; 00:00:02     ; 1.0                     ; 813 MB              ; 00:00:01                           ;
+; Timing Analyzer      ; 00:00:03     ; 1.0                     ; 780 MB              ; 00:00:02                           ;
+; Total                ; 00:00:39     ; --                      ; --                  ; 00:01:18                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -112,10 +112,10 @@ refer to the applicable agreement for further details.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; home             ; Linux Mint ; 19         ; x86_64         ;
-; Fitter               ; home             ; Linux Mint ; 19         ; x86_64         ;
-; Assembler            ; home             ; Linux Mint ; 19         ; x86_64         ;
-; Timing Analyzer      ; home             ; Linux Mint ; 19         ; x86_64         ;
+; Analysis & Synthesis ; X202E            ; Linux Mint ; 19         ; x86_64         ;
+; Fitter               ; X202E            ; Linux Mint ; 19         ; x86_64         ;
+; Assembler            ; X202E            ; Linux Mint ; 19         ; x86_64         ;
+; Timing Analyzer      ; X202E            ; Linux Mint ; 19         ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 

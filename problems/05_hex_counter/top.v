@@ -17,5 +17,9 @@ wire clk1, clk2; /* Clocks */
 /*
 *   Instantiate hex display driver, 16-bit counter and two clock dividers here
 */
+  clk_div #(.x(24)) div_for_counter(.clk(CLK),.clk_out(clk1));
+  clk_div #(.x(16)) div_for_display(.clk(CLK),. clk_out(clk2));
+  counter #(.W(16))data_gen(.clk(clk1),.q(data));
+  hex_display display(.clk(clk2),.data(data),.anodes(anodes),.segments(segments));
 
 endmodule

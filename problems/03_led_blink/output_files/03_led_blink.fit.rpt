@@ -1,5 +1,5 @@
 Fitter report for 03_led_blink
-Sun Oct 27 22:04:02 2019
+Mon Nov 11 16:02:11 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -66,17 +66,17 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Sun Oct 27 22:04:02 2019       ;
+; Fitter Status                      ; Successful - Mon Nov 11 16:02:11 2019       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; 03_led_blink                                ;
 ; Top-level Entity Name              ; top                                         ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE6E22C8                                 ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 25 / 6,272 ( < 1 % )                        ;
-;     Total combinational functions  ; 25 / 6,272 ( < 1 % )                        ;
-;     Dedicated logic registers      ; 25 / 6,272 ( < 1 % )                        ;
-; Total registers                    ; 25                                          ;
+; Total logic elements               ; 24 / 6,272 ( < 1 % )                        ;
+;     Total combinational functions  ; 24 / 6,272 ( < 1 % )                        ;
+;     Dedicated logic registers      ; 24 / 6,272 ( < 1 % )                        ;
+; Total registers                    ; 24                                          ;
 ; Total pins                         ; 6 / 92 ( 7 % )                              ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 276,480 ( 0 % )                         ;
@@ -260,8 +260,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Type                ; Total [A + B]     ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+-------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                   ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 74 ) ; 0.00 % ( 0 / 74 )          ; 0.00 % ( 0 / 74 )        ;
-;     -- Achieved     ; 0.00 % ( 0 / 74 ) ; 0.00 % ( 0 / 74 )          ; 0.00 % ( 0 / 74 )        ;
+;     -- Requested    ; 0.00 % ( 0 / 72 ) ; 0.00 % ( 0 / 72 )          ; 0.00 % ( 0 / 72 )        ;
+;     -- Achieved     ; 0.00 % ( 0 / 72 ) ; 0.00 % ( 0 / 72 )          ; 0.00 % ( 0 / 72 )        ;
 ;                     ;                   ;                            ;                          ;
 ; Routing (by net)    ;                   ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )  ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -284,7 +284,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 64 )     ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 62 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 10 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -292,7 +292,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in /home/mish/dev/drec-fpga-intro-master/problems/03_led_blink/output_files/03_led_blink.pin.
+The pin-out file can be found in /home/mish/dev/FPGA/fpga_edu/problems/03_led_blink/output_files/03_led_blink.pin.
 
 
 +--------------------------------------------------------------------+
@@ -300,23 +300,23 @@ The pin-out file can be found in /home/mish/dev/drec-fpga-intro-master/problems/
 +---------------------------------------------+----------------------+
 ; Resource                                    ; Usage                ;
 +---------------------------------------------+----------------------+
-; Total logic elements                        ; 25 / 6,272 ( < 1 % ) ;
+; Total logic elements                        ; 24 / 6,272 ( < 1 % ) ;
 ;     -- Combinational with no register       ; 0                    ;
 ;     -- Register only                        ; 0                    ;
-;     -- Combinational with a register        ; 25                   ;
+;     -- Combinational with a register        ; 24                   ;
 ;                                             ;                      ;
 ; Logic element usage by number of LUT inputs ;                      ;
 ;     -- 4 input functions                    ; 0                    ;
-;     -- 3 input functions                    ; 0                    ;
-;     -- <=2 input functions                  ; 25                   ;
+;     -- 3 input functions                    ; 1                    ;
+;     -- <=2 input functions                  ; 23                   ;
 ;     -- Register only                        ; 0                    ;
 ;                                             ;                      ;
 ; Logic elements by mode                      ;                      ;
-;     -- normal mode                          ; 1                    ;
-;     -- arithmetic mode                      ; 24                   ;
+;     -- normal mode                          ; 2                    ;
+;     -- arithmetic mode                      ; 22                   ;
 ;                                             ;                      ;
-; Total registers*                            ; 25 / 6,684 ( < 1 % ) ;
-;     -- Dedicated logic registers            ; 25 / 6,272 ( < 1 % ) ;
+; Total registers*                            ; 24 / 6,684 ( < 1 % ) ;
+;     -- Dedicated logic registers            ; 24 / 6,272 ( < 1 % ) ;
 ;     -- I/O registers                        ; 0 / 412 ( 0 % )      ;
 ;                                             ;                      ;
 ; Total LABs:  partially or completely used   ; 2 / 392 ( < 1 % )    ;
@@ -339,10 +339,10 @@ The pin-out file can be found in /home/mish/dev/drec-fpga-intro-master/problems/
 ; Impedance control blocks                    ; 0 / 4 ( 0 % )        ;
 ; Average interconnect usage (total/H/V)      ; 0.0% / 0.0% / 0.0%   ;
 ; Peak interconnect usage (total/H/V)         ; 0.0% / 0.0% / 0.0%   ;
-; Maximum fan-out                             ; 27                   ;
-; Highest non-global fan-out                  ; 27                   ;
-; Total fan-out                               ; 137                  ;
-; Average fan-out                             ; 1.88                 ;
+; Maximum fan-out                             ; 24                   ;
+; Highest non-global fan-out                  ; 2                    ;
+; Total fan-out                               ; 108                  ;
+; Average fan-out                             ; 1.52                 ;
 +---------------------------------------------+----------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -355,23 +355,23 @@ The pin-out file can be found in /home/mish/dev/drec-fpga-intro-master/problems/
 +---------------------------------------------+---------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                 ; Low                            ;
 ;                                             ;                     ;                                ;
-; Total logic elements                        ; 25 / 6272 ( < 1 % ) ; 0 / 6272 ( 0 % )               ;
+; Total logic elements                        ; 24 / 6272 ( < 1 % ) ; 0 / 6272 ( 0 % )               ;
 ;     -- Combinational with no register       ; 0                   ; 0                              ;
 ;     -- Register only                        ; 0                   ; 0                              ;
-;     -- Combinational with a register        ; 25                  ; 0                              ;
+;     -- Combinational with a register        ; 24                  ; 0                              ;
 ;                                             ;                     ;                                ;
 ; Logic element usage by number of LUT inputs ;                     ;                                ;
 ;     -- 4 input functions                    ; 0                   ; 0                              ;
-;     -- 3 input functions                    ; 0                   ; 0                              ;
-;     -- <=2 input functions                  ; 25                  ; 0                              ;
+;     -- 3 input functions                    ; 1                   ; 0                              ;
+;     -- <=2 input functions                  ; 23                  ; 0                              ;
 ;     -- Register only                        ; 0                   ; 0                              ;
 ;                                             ;                     ;                                ;
 ; Logic elements by mode                      ;                     ;                                ;
-;     -- normal mode                          ; 1                   ; 0                              ;
-;     -- arithmetic mode                      ; 24                  ; 0                              ;
+;     -- normal mode                          ; 2                   ; 0                              ;
+;     -- arithmetic mode                      ; 22                  ; 0                              ;
 ;                                             ;                     ;                                ;
-; Total registers                             ; 25                  ; 0                              ;
-;     -- Dedicated logic registers            ; 25 / 6272 ( < 1 % ) ; 0 / 6272 ( 0 % )               ;
+; Total registers                             ; 24                  ; 0                              ;
+;     -- Dedicated logic registers            ; 24 / 6272 ( < 1 % ) ; 0 / 6272 ( 0 % )               ;
 ;     -- I/O registers                        ; 0                   ; 0                              ;
 ;                                             ;                     ;                                ;
 ; Total LABs:  partially or completely used   ; 2 / 392 ( < 1 % )   ; 0 / 392 ( 0 % )                ;
@@ -390,8 +390,8 @@ The pin-out file can be found in /home/mish/dev/drec-fpga-intro-master/problems/
 ;     -- Registered Output Connections        ; 0                   ; 0                              ;
 ;                                             ;                     ;                                ;
 ; Internal Connections                        ;                     ;                                ;
-;     -- Total Connections                    ; 132                 ; 5                              ;
-;     -- Registered Connections               ; 51                  ; 0                              ;
+;     -- Total Connections                    ; 103                 ; 5                              ;
+;     -- Registered Connections               ; 26                  ; 0                              ;
 ;                                             ;                     ;                                ;
 ; External Connections                        ;                     ;                                ;
 ;     -- Top                                  ; 0                   ; 0                              ;
@@ -423,7 +423,7 @@ The pin-out file can be found in /home/mish/dev/drec-fpga-intro-master/problems/
 +------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 ; Name ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
-; CLK  ; 24    ; 2        ; 0            ; 11           ; 14           ; 25                    ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; CLK  ; 24    ; 2        ; 0            ; 11           ; 14           ; 24                    ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 +------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 
 
@@ -653,8 +653,8 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------+-------------+--------------+
-; |top                       ; 25 (0)      ; 25 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 6    ; 0            ; 0 (0)        ; 0 (0)             ; 25 (0)           ; |top                ; top         ; work         ;
-;    |clk_div:div|           ; 25 (25)     ; 25 (25)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 25 (25)          ; |top|clk_div:div    ; clk_div     ; work         ;
+; |top                       ; 24 (0)      ; 24 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 6    ; 0            ; 0 (0)        ; 0 (0)             ; 24 (0)           ; |top                ; top         ; work         ;
+;    |clk_div:div|           ; 24 (24)     ; 24 (24)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 24 (24)          ; |top|clk_div:div    ; clk_div     ; work         ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -682,14 +682,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------+-------------------+---------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------+
-; Control Signals                                                                                                                            ;
-+---------------------+---------------+---------+-------------+--------+----------------------+------------------+---------------------------+
-; Name                ; Location      ; Fan-Out ; Usage       ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+---------------------+---------------+---------+-------------+--------+----------------------+------------------+---------------------------+
-; CLK                 ; PIN_24        ; 25      ; Clock       ; yes    ; Global Clock         ; GCLK4            ; --                        ;
-; clk_div:div|cnt[24] ; FF_X1_Y22_N25 ; 27      ; Sync. clear ; no     ; --                   ; --               ; --                        ;
-+---------------------+---------------+---------+-------------+--------+----------------------+------------------+---------------------------+
++------------------------------------------------------------------------------------------------------------------+
+; Control Signals                                                                                                  ;
++------+----------+---------+-------+--------+----------------------+------------------+---------------------------+
+; Name ; Location ; Fan-Out ; Usage ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++------+----------+---------+-------+--------+----------------------+------------------+---------------------------+
+; CLK  ; PIN_24   ; 24      ; Clock ; yes    ; Global Clock         ; GCLK4            ; --                        ;
++------+----------+---------+-------+--------+----------------------+------------------+---------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------+
@@ -697,7 +696,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 ; Name ; Location ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; CLK  ; PIN_24   ; 25      ; 0                                    ; Global Clock         ; GCLK4            ; --                        ;
+; CLK  ; PIN_24   ; 24      ; 11                                   ; Global Clock         ; GCLK4            ; --                        ;
 +------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
 
@@ -711,16 +710,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; C4 interconnects      ; 1 / 21,816 ( < 1 % )  ;
 ; Direct links          ; 0 / 32,401 ( 0 % )    ;
 ; Global clocks         ; 1 / 10 ( 10 % )       ;
-; Local interconnects   ; 25 / 10,320 ( < 1 % ) ;
+; Local interconnects   ; 24 / 10,320 ( < 1 % ) ;
 ; R24 interconnects     ; 0 / 1,289 ( 0 % )     ;
-; R4 interconnects      ; 1 / 28,186 ( < 1 % )  ;
+; R4 interconnects      ; 0 / 28,186 ( 0 % )    ;
 +-----------------------+-----------------------+
 
 
 +---------------------------------------------------------------------------+
 ; LAB Logic Elements                                                        ;
 +---------------------------------------------+-----------------------------+
-; Number of Logic Elements  (Average = 12.50) ; Number of LABs  (Total = 2) ;
+; Number of Logic Elements  (Average = 12.00) ; Number of LABs  (Total = 2) ;
 +---------------------------------------------+-----------------------------+
 ; 1                                           ; 0                           ;
 ; 2                                           ; 0                           ;
@@ -733,8 +732,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 9                                           ; 0                           ;
 ; 10                                          ; 0                           ;
 ; 11                                          ; 0                           ;
-; 12                                          ; 1                           ;
-; 13                                          ; 1                           ;
+; 12                                          ; 2                           ;
+; 13                                          ; 0                           ;
 ; 14                                          ; 0                           ;
 ; 15                                          ; 0                           ;
 ; 16                                          ; 0                           ;
@@ -744,17 +743,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------------------------------------------+
 ; LAB-wide Signals                                                 ;
 +------------------------------------+-----------------------------+
-; LAB-wide Signals  (Average = 1.50) ; Number of LABs  (Total = 2) ;
+; LAB-wide Signals  (Average = 1.00) ; Number of LABs  (Total = 2) ;
 +------------------------------------+-----------------------------+
 ; 1 Clock                            ; 2                           ;
-; 1 Sync. clear                      ; 1                           ;
 +------------------------------------+-----------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                        ;
 +----------------------------------------------+-----------------------------+
-; Number of Signals Sourced  (Average = 25.00) ; Number of LABs  (Total = 2) ;
+; Number of Signals Sourced  (Average = 24.00) ; Number of LABs  (Total = 2) ;
 +----------------------------------------------+-----------------------------+
 ; 0                                            ; 0                           ;
 ; 1                                            ; 0                           ;
@@ -780,9 +778,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 21                                           ; 0                           ;
 ; 22                                           ; 0                           ;
 ; 23                                           ; 0                           ;
-; 24                                           ; 1                           ;
-; 25                                           ; 0                           ;
-; 26                                           ; 1                           ;
+; 24                                           ; 2                           ;
 +----------------------------------------------+-----------------------------+
 
 
@@ -799,11 +795,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                       ;
 +---------------------------------------------+-----------------------------+
-; Number of Distinct Inputs  (Average = 2.00) ; Number of LABs  (Total = 2) ;
+; Number of Distinct Inputs  (Average = 1.50) ; Number of LABs  (Total = 2) ;
 +---------------------------------------------+-----------------------------+
 ; 0                                           ; 0                           ;
-; 1                                           ; 0                           ;
-; 2                                           ; 2                           ;
+; 1                                           ; 1                           ;
+; 2                                           ; 1                           ;
 +---------------------------------------------+-----------------------------+
 
 
@@ -916,7 +912,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------+
 ; Fitter Messages ;
 +-----------------+
-Warning (12473): User specified to use only one processors but 4 processors were detected which could be used to decrease run time.
+Warning (12473): User specified to use only one processors but 2 processors were detected which could be used to decrease run time.
 Info (119006): Selected device EP4CE6E22C8 for design "03_led_blink"
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
@@ -938,7 +934,7 @@ Info (332144): No user constrained base clocks found in the design
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
-Info (176353): Automatically promoted node CLK~input (placed in PIN 24 (CLK2, DIFFCLK_1p)) File: /home/mish/dev/drec-fpga-intro-master/problems/03_led_blink/top.v Line: 13
+Info (176353): Automatically promoted node CLK~input (placed in PIN 24 (CLK2, DIFFCLK_1p)) File: /home/mish/dev/FPGA/fpga_edu/problems/03_led_blink/top.v Line: 13
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G4
 Info (176233): Starting register packing
 Info (176235): Finished register packing
@@ -1046,24 +1042,24 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
-Info (11888): Total time spent on timing analysis during the Fitter is 0.04 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.08 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
-Info (144001): Generated suppressed messages file /home/mish/dev/drec-fpga-intro-master/problems/03_led_blink/output_files/03_led_blink.fit.smsg
+Info (144001): Generated suppressed messages file /home/mish/dev/FPGA/fpga_edu/problems/03_led_blink/output_files/03_led_blink.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 95 warnings
-    Info: Peak virtual memory: 1130 megabytes
-    Info: Processing ended: Sun Oct 27 22:04:02 2019
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:05
+    Info: Peak virtual memory: 1132 megabytes
+    Info: Processing ended: Mon Nov 11 16:02:11 2019
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:08
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in /home/mish/dev/drec-fpga-intro-master/problems/03_led_blink/output_files/03_led_blink.fit.smsg.
+The suppressed messages can be found in /home/mish/dev/FPGA/fpga_edu/problems/03_led_blink/output_files/03_led_blink.fit.smsg.
 
 

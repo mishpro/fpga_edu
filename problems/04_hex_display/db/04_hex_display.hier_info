@@ -1,0 +1,109 @@
+|top
+CLK => CLK.IN1
+DS_EN1 <= hex_display:display.anodes
+DS_EN2 <= hex_display:display.anodes
+DS_EN3 <= hex_display:display.anodes
+DS_EN4 <= hex_display:display.anodes
+DS_A <= hex_display:display.segments
+DS_B <= hex_display:display.segments
+DS_C <= hex_display:display.segments
+DS_D <= hex_display:display.segments
+DS_E <= hex_display:display.segments
+DS_F <= hex_display:display.segments
+DS_G <= hex_display:display.segments
+
+
+|top|clk_div:div
+clk => cnt[0].CLK
+clk => cnt[1].CLK
+clk => cnt[2].CLK
+clk => cnt[3].CLK
+clk => cnt[4].CLK
+clk => cnt[5].CLK
+clk => cnt[6].CLK
+clk => cnt[7].CLK
+clk => cnt[8].CLK
+clk => cnt[9].CLK
+clk => cnt[10].CLK
+clk => cnt[11].CLK
+clk => cnt[12].CLK
+clk => cnt[13].CLK
+clk => cnt[14].CLK
+clk => cnt[15].CLK
+clk_out <= cnt[15].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top|hex_display:display
+clk => i[0].CLK
+clk => i[1].CLK
+data[0] => Mux0.IN14
+data[1] => Mux1.IN14
+data[2] => Mux2.IN14
+data[3] => Mux3.IN14
+data[4] => Mux0.IN10
+data[5] => Mux1.IN10
+data[6] => Mux2.IN10
+data[7] => Mux3.IN10
+data[8] => Mux0.IN6
+data[9] => Mux1.IN6
+data[10] => Mux2.IN6
+data[11] => Mux3.IN6
+data[12] => Mux0.IN2
+data[13] => Mux1.IN2
+data[14] => Mux2.IN2
+data[15] => Mux3.IN2
+anodes[0] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+anodes[1] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+anodes[2] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+anodes[3] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+segments[0] <= hex_to_seg:hex_to_seg.segments
+segments[1] <= hex_to_seg:hex_to_seg.segments
+segments[2] <= hex_to_seg:hex_to_seg.segments
+segments[3] <= hex_to_seg:hex_to_seg.segments
+segments[4] <= hex_to_seg:hex_to_seg.segments
+segments[5] <= hex_to_seg:hex_to_seg.segments
+segments[6] <= hex_to_seg:hex_to_seg.segments
+
+
+|top|hex_display:display|hex_to_seg:hex_to_seg
+data[0] => Mux0.IN19
+data[0] => Mux1.IN19
+data[0] => Mux2.IN19
+data[0] => Mux3.IN19
+data[0] => Mux4.IN19
+data[0] => Mux5.IN19
+data[0] => Mux6.IN19
+data[0] => Mux7.IN19
+data[1] => Mux0.IN18
+data[1] => Mux1.IN18
+data[1] => Mux2.IN18
+data[1] => Mux3.IN18
+data[1] => Mux4.IN18
+data[1] => Mux5.IN18
+data[1] => Mux6.IN18
+data[1] => Mux7.IN18
+data[2] => Mux0.IN17
+data[2] => Mux1.IN17
+data[2] => Mux2.IN17
+data[2] => Mux3.IN17
+data[2] => Mux4.IN17
+data[2] => Mux5.IN17
+data[2] => Mux6.IN17
+data[2] => Mux7.IN17
+data[3] => Mux0.IN16
+data[3] => Mux1.IN16
+data[3] => Mux2.IN16
+data[3] => Mux3.IN16
+data[3] => Mux4.IN16
+data[3] => Mux5.IN16
+data[3] => Mux6.IN16
+data[3] => Mux7.IN16
+segments[0] <= segments[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+segments[1] <= segments[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+segments[2] <= segments[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+segments[3] <= segments[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+segments[4] <= segments[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+segments[5] <= segments[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+segments[6] <= segments[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
